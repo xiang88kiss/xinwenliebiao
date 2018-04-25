@@ -1,0 +1,237 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul li{
+	list-style: none;
+}
+.clear{
+	clear: both;
+}
+.icon:after{
+	content: '';
+	display: inline;
+	border: 1px solid red;
+	margin-left: 3px;
+}
+/*<!--顶部登录stare-->*/
+.top_login{
+	width: 100%;
+	line-height: 40px;
+	background: #eee;
+}
+.top_login .top_loginbox,.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.top_login .top_project{
+	width: 30%;
+	float: left;
+}
+.top_login .login{
+	width: 60%;
+	float: right;
+	padding-left: 20%;
+}
+.top_login .login span{
+	margin: 5px;
+}
+.top_login .login span a:hover{	
+	color: orange;
+	
+}
+/*<!--顶部登录end-->*/
+
+/*<!--头部stare-->*/
+.header{
+	margin-top: 10px;
+	width: 100%;
+	height: 100px;
+}
+.header .header_logo{
+	width: 184px;
+	float: left;
+}
+.header .header_logo img{
+	width: 100%;
+}
+.header .search{
+	line-height: 100px;
+}
+.header .search input[type=search]{
+	width: 55%;
+	height: 40px;
+	padding-left: 20px;
+	border:1px solid red;
+}
+.header .search button{
+	background: red;
+	height: 40px;
+	width: 100px;
+}
+.header .search .btn_search{	
+    margin-left: -10px;
+    border: 1px solid #555;
+    color: white;
+    font-size: 16px;
+}
+.header .search .btn_recommend{
+	background: #EEEEEE;
+	border: 1px solid silver;
+	font-size: 16px;
+}
+.header .search span a{
+	margin: 5px;
+	color: #990000;
+}
+
+.header .header_nav{
+	margin-top: -18px;
+}
+.header .header_nav span{
+	margin: 0 15px;    
+}
+.header .header_nav span a{
+	font-weight: bold;
+	
+}
+.header .header_nav span:hover a{
+	color: red;
+	text-decoration: none !important;
+}
+/*<!--头部end-->*/
+.session{
+	width: 100%;
+	margin: 25px;
+}
+.session .session_nav{
+	text-align: center;
+	margin: 20px;
+	font-size: 16px;
+}
+.session .session_nav span{
+	padding: 5px;	
+}
+.session .session_nav span a{
+	color: #990000;
+}
+.session .session_nav .icon:after{
+	margin-left: 15px;
+}
+.session .session_content,.session .session_content ul{
+	width: 100%;	
+}
+.session .session_content .list{
+	width: 32%;
+	float: left;
+	border: 1px solid #ccc;
+	margin-top: 10px;	
+	height: 480px;
+}
+.session .session_content .list:nth-child(2),.session .session_content .list:nth-child(3),
+.session .session_content .list:nth-child(5),.session .session_content .list:nth-child(6){
+	margin-left: 2%;
+}
+.session .session_content .list .list_tittle{
+	line-height: 30px;
+	font-weight: bold;
+	background: #eee;
+	padding:0 10px ;
+}
+.session .session_content .list .list_stute{
+	line-height: 30px;
+}
+.session .session_content .list .list_stute span{
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+	background: lavenderblush;
+	border: 1px solid #ccc;
+}
+.session .session_content .list .list_stute span:hover{
+	background: red;
+	color: white;
+}
+.session .session_content .list .list_state_box{
+	width: 100%;	
+	padding: 0 10px;
+	position: relative;
+}
+.session .session_content .list .list_state_box ul{
+	width: 95%;
+	position: absolute;
+	left: 10px;
+	top: 0;
+	display: none;
+}
+.session .session_content .list .list_state_box li{
+	width: 100%;
+	line-height: 30px;
+	border-bottom: 1px dashed #ccc;
+	position: relative;
+}
+.session .session_content .list .list_state_box li a{
+	color: #2464b2;
+}
+.session .session_content .list .list_state_box li .new,
+.session .session_content .list .list_state_box li .old{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	padding: 3px;
+	background: red;
+	line-height: 10px;
+	color: white;
+	font-size: 12px;
+	text-align: center;	
+}
+.session .session_content .list .list_state_box li .old{
+	background: #ccc !important;
+}
+.session .session_content .list .list_state_box li .time{
+	position: absolute;
+    right: 20px
+
+}
+.session .session_content .list .list_state_box .list_bottom{
+	position: absolute;
+	bottom: -31px;
+	right: 10px;
+}
+.session .session_content .list .list_state_box  .box,
+.session .session_content .list .list_state_box  .hot_box{
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	display: none;
+	margin: 10px 0;
+}
+.session .session_content .list .list_state_box  .box p{
+	text-indent: 2em;
+}
+.session .session_content .list .list_state_box  .box span{
+	display: inline-block;
+	width: 50%;
+}
+.session .session_content .list .list_state_box  .box span img{
+	width: 100%;
+	float: left;
+}
+.session .session_content .list .list_state_box  .box .font_span{
+	float: right;    
+}
+.session .session_content .list .list_state_box  .box .font{
+	font-style: normal;
+	text-indent: 2em;
+}
+/*<!--广告信息stare-->*/
+
+/*<!--广告信息end-->*/
